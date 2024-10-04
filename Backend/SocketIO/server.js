@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://chatapp-djkp.onrender.com",
+    origin: "http://localhost:4002",
     methods: ["GET", "POST"],
   },
 });
